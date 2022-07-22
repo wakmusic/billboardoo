@@ -1,0 +1,359 @@
+.search-btn-wrap {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+
+.search-input {
+    font-size: 15px;
+    width: 210px;
+    height: 18px;
+    padding: 8px 10px 8px 35px;
+    border: 1px solid black;
+    font-family: Pretendard, sans-serif;
+    border-radius: 99px;
+    outline: 0;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    border: none;
+    background: none;
+    position: absolute;
+    margin: 9px;
+    color: black;
+}
+
+#search-result {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+
+.result-item {
+    margin: -1px auto 0;
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    font-family: Pretendard, sans-serif;
+    color: black;
+    transition: 0.2s;
+}
+
+.result-item:hover > .result-title,
+.result-item:hover > .result-artist,
+.result-item:hover > .result-date {
+    opacity: 75%;
+    transition: 0.2s;
+}
+
+.search {
+    text-align: center;
+}
+
+.search-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.result-vertical {
+    border-left : 2px solid black;
+    height : 40px;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 55px;
+}
+
+.result-title {
+    margin-left: 62px;
+    margin-top: 5px;
+    position: absolute;
+    max-width: 140px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result-artist {
+    position: absolute;
+    margin-left: 62px;
+    margin-top: 25px;
+    max-width: 140px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result-date {
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 17px;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+
+.new-chart {
+    width: 90%;
+    margin: 80px auto 170px;
+    text-align: center;
+}
+
+.albums-stat {
+    padding-top: 30px;
+    font-family: Pretendard, sans-serif;
+    font-size: 40px;
+    text-align: center !important;
+    margin-bottom: -57px;
+}
+
+.no-song {
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    margin-top: 110px;
+}
+
+.view-all {
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 45px;
+    right: 140px;
+    color: #1a48c4;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+#view-all-news {
+    margin-top: -95px;
+    margin-right: 85px;
+}
+
+.view-all:hover {
+    color: #01b1e6;
+    transition: 0.1s;
+}
+
+.new-wrapper {
+    display: flex;
+}
+
+.new-body {
+    position: relative;
+    float: left;
+    margin: 70px auto 0;
+    padding: 20px 20px 30px 20px;
+    width: 30%;
+    flex: 1;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: black;
+    text-decoration: none;
+}
+
+.new-body:hover {
+    background: #f5f5f5;
+    transition: 0.2s;
+}
+
+.new-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.new-title-wrap {
+    font-family: LeferiBaseType, sans-serif;
+    font-size: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 60%;
+}
+
+.new-title {
+    padding: 5px;
+}
+
+.new-artist {
+    position: absolute;
+    margin-top: 30px;
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    left: 0;
+    padding-left: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 60%;
+}
+
+.new-date {
+    font-size: 17px;
+    margin-top: -30px;
+    position: absolute;
+    right: 20px;
+    font-family: Pretendard, sans-serif;
+    color: #473b3d;
+}
+
+.arrow-down::after {
+    position: absolute;
+    margin: 23px 0 0 100px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+.arrow-up::after {
+    position: absolute;
+    margin: 32px 0 0 -120px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(315deg);
+    cursor: pointer;
+}
+
+.btn-wrap {
+    width: 45%;
+    margin: 40px auto 0;
+    text-align: center;
+    display: flex;
+}
+
+.new-btn {
+    margin: 0 auto;
+    font-family: Pretendard, sans-serif;
+    font-size: 27px;
+    padding: 15px;
+    border: 2px solid #222222;
+    border-radius: 40px;
+    width: 200px;
+    transition: 0.2s;
+    color: black;
+    text-decoration: none;
+}
+
+.new-btn:hover {
+    background: #222222;
+    color: white;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.new-regular-line {
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+@media (max-width: 1400px) {
+    .search-input {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .regular-line {
+        display: none;
+    }
+
+    .albums-stat {
+        margin: -80px auto -60px;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    .new-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 960px) {
+    .search-btn-wrap {
+        top: 400px;
+    }
+
+    .new-image {
+        height: 130px;
+    }
+}
+
+@media (max-width: 860px) {
+    .new-chart {
+        margin: 90px auto 170px;
+    }
+
+    .new-date {
+        display: none;
+    }
+
+    .new-btn {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .new-image {
+        height: 110px;
+    }
+
+    .new-title {
+        font-size: 22px;
+    }
+
+    .new-artist {
+        font-size: 18px;
+        margin-left: -10px;
+    }
+
+    .new-body {
+        height: 170px;
+    }
+}
+
+@media (max-width: 855px) {
+    .new-chart {
+        width: 90%;
+        text-align: center;
+    }
+
+    .new-body {
+        margin: 70px 0 0;
+        padding: 10px 10px 20px 10px;
+    }
+
+    .new-image {
+        height: 90px;
+    }
+
+    .new-body {
+        height: 140px;
+    }
+}
+
+@media (max-width: 720px) {
+    .new-btn {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .new-image {
+        height: 80px;
+    }
+}
