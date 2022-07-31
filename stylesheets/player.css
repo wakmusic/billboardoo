@@ -1,0 +1,385 @@
+.player-container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.lyrics-wrap {
+    position: absolute;
+    top: 0;
+    overflow: scroll;
+    height: 500px;
+    width: 300px;
+    margin-top: 220px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 25px;
+    overflow-x: hidden;
+}
+
+.lyrics {
+    font-family: Pretendard, sans-serif;
+    line-height: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.1s;
+    white-space: pre-line;
+}
+
+.lyric-selected {
+    font-weight: bold;
+}
+
+.lyrics:hover {
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.ytVideo {
+    display: none;
+}
+
+.player-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 50px;
+}
+
+.mode-select {
+    margin-bottom: 30px;
+}
+
+.tip {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: Pretendard, sans-serif;
+    font-size: 18px;
+    color: #1a48c4;
+}
+
+.player-contents {
+    margin: 30px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.player-title {
+    margin: 20px auto 10px;
+    text-align: center;
+    font-family: Pretendard, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.player-artist {
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    color: #222222;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.player-btn {
+    background: #f5f5f5;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.player-btn > div {
+    cursor: pointer;
+    width: 45px;
+    margin: 0 auto;
+}
+
+.player-btn > div > i {
+    position: absolute;
+    font-size: 40px;
+    padding: 0 8px;
+    border-radius: 99px;
+    transition: 0.2s;
+}
+
+.player-btn > div > i:hover {
+    background: #c4c4c4;
+    transition: 0.2s;
+}
+
+i.fa-play {
+    padding-right: 3px !important;
+}
+
+.fa-play, .fa-pause {
+    margin-left: -13px;
+}
+
+.fa-forward-step {
+    margin-left: 77px;
+}
+
+.fa-backward-step {
+    margin-left: -103px;
+}
+
+.progress-wrap {
+    margin: 30px auto 40px;
+    text-align: center;
+    width: 300px;
+}
+
+#progress {
+    width: 300px;
+    height: 5px;
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+    appearance: none;
+    background: #c4c4c4;
+    border-radius: 5px;
+    transition: 0.2s;
+    color: black;
+}
+
+#progress:hover {
+    background: #a6a6a6;
+    transition: 0.2s;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background: black;
+    cursor: pointer;
+}
+
+#music-progress {
+    float: left;
+    padding-top: 3px;
+    font-family: Pretendard, sans-serif;
+}
+
+#music-duration {
+    float: right;
+    padding-top: 3px;
+    font-family: Pretendard, sans-serif;
+}
+
+.player-list {
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 30px;
+    padding-top: 150px;
+}
+
+.playlist-wrap {
+    position: absolute;
+    width: 100%;
+    overflow: scroll;
+    height: 700px;
+}
+
+.next-list {
+    font-family: Pretendard, sans-serif;
+    font-size: 22px;
+}
+
+.list-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+.list-body {
+    padding: 5px;
+    height: 55px;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.current-music {
+    background: #f2f2f2;
+}
+
+.current-music:hover {
+    background: #f2f2f2;
+}
+
+.list-body:hover {
+    background: #f5f5f5;
+    transition: 0.2s;
+}
+
+.list-image {
+    width: 55px;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+
+.list-title {
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 85px;
+    margin-top: 3px;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.list-artist {
+    font-family: Pretendard, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    left: 85px;
+    margin-top: 30px;
+    color: #222222;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.volume-player-btn {
+    margin: 30px auto;
+    width: 300px;
+    text-align: right;
+    font-size: 20px;
+}
+
+#volume-btn {
+    margin-left: 190px;
+    width: 20px;
+}
+
+#volume-bar {
+    width: 80px;
+    appearance: none;
+    height: 5px;
+    position: absolute;
+    margin: -15px -75px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+    color: black;
+}
+
+#volume-bar:hover {
+    background: #a6a6a6;
+    transition: 0.2s;
+}
+
+#volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background: black;
+    cursor: pointer;
+}
+
+.fa-volume-off {
+    margin-right: 12px;
+}
+
+.fa-volume-low {
+    margin-right: 7px;
+}
+
+
+@media (max-width: 1350px) {
+    .tip {
+        display: none;
+    }
+
+    .player-contents {
+        margin: 30px 0;
+    }
+
+    .player-list {
+        width: 40%;
+    }
+}
+
+@media (max-width: 980px) {
+    .player-contents {
+        margin: -80px -80px 0;
+    }
+
+    .playlist-wrap {
+        height: 600px;
+    }
+
+    .player-list {
+        width: 50%;
+    }
+
+    .volume-player-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .player-contents {
+        text-align: center;
+        margin: -80px auto 900px;
+    }
+
+    .player-list {
+        top: 700px;
+        width: 95%;
+        right: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .player-contents {
+        width: 80%;
+        margin-bottom: 900px;
+    }
+}
+
+@media (max-width: 400px) {
+    .player-image, .progress-wrap, #progress {
+        width: 200px;
+    }
+
+    .player-image, .progress-wrap, #progress, .player-btn {
+        width: 250px;
+    }
+
+    .player-btn {
+    }
+
+
+    .player-image {
+        margin-top: -10px;
+        margin-bottom: -30px;
+    }
+
+    .player-list {
+        top: 500px;
+    }
+
+    .list-title, .list-artist {
+        max-width: 250px;
+    }
+}
