@@ -1,0 +1,105 @@
+.credit-page {
+    width: 80%;
+    margin: 0 auto 100px;
+    text-align: left;
+}
+
+.credit-title {
+    font-family: LeferiBaseType, sans-serif;
+    font-size: 30px;
+    margin: 50px 0 20px 0;
+}
+
+.creditor {
+    font-family: Pretendard, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.creditor > a {
+    text-decoration: none;
+    color: #1a48c4;
+}
+
+.creditor > a:hover {
+    color: #01b1e6;
+}
+
+.credit-subtitle {
+    font-family: Pretendard, sans-serif;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.fade-in-company {
+    animation: slide 1.5s;
+}
+
+.company-title {
+    font-family: GmarketSansBold, sans-serif;
+    font-size: 35px;
+}
+
+.company-page {
+    width: 80%;
+    margin: 140px auto 230px;
+    text-align: left;
+}
+
+.company-subtitle {
+    font-size: 30px;
+    font-family: Pretendard, sans-serif;
+}
+
+.company-text {
+    font-family: Pretendard, sans-serif;
+    font-size: 25px;
+}
+
+.company-logo {
+    width: 300px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+
+.motto {
+    font-size: 80px;
+    font-family: Pretendard, sans-serif;
+    font-weight: 1000;
+    margin-top: 700px;
+    margin-bottom: 20px;
+}
+
+.company-text-center {
+    text-align: center;
+    font-family: Pretendard, sans-serif;
+    font-size: 25px;
+}
+
+.company-history {
+    font-size: 60px;
+    font-family: Pretendard, sans-serif;
+    text-align: left;
+    font-weight: 1000;
+    margin-top: 700px;
+    margin-bottom: 20px;
+}
+
+.history-title {
+    font-family: Pretendard, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.history-desc {
+    font-family: Pretendard, sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1550px) {
+    .company-logo {
+        display: none;
+    }
+}

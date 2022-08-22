@@ -1,0 +1,23 @@
+#le {
+    position: absolute;
+    text-align: center;
+    margin-top: -50px;
+    left: 30px;
+    color: white;
+    font-family: Pretendard, sans-serif;
+    text-decoration: none;
+}
+
+.le-title {
+    font-family: GmarketSansBold, sans-serif;
+    font-size: 35px;
+}
+
+.je {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#jururu-aggro {
+    width: 40%;
+}

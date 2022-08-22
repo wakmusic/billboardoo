@@ -51,6 +51,7 @@ class YouTubeVideo extends React.PureComponent {
                 document.getElementById('play-btn').innerHTML = '<i class="fa-solid fa-pause"></i>';
 
             let current = parseInt(event.target.getCurrentTime());
+            document.getElementById('current').innerText = event.target.getCurrentTime();
             const element = document.getElementById('music-progress');
             element.innerHTML = `${parseInt(current / 60)}:${current % 60 >= 10 ? current % 60 : '0' + current % 60}`;
 

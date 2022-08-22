@@ -304,6 +304,11 @@ i.fa-play {
     margin-right: 7px;
 }
 
+@media (max-width: 1700px) {
+    .lyrics-wrap {
+        left: 5%;
+    }
+}
 
 @media (max-width: 1350px) {
     .tip {
@@ -316,6 +321,10 @@ i.fa-play {
 
     .player-list {
         width: 40%;
+    }
+
+    .lyrics-wrap {
+        display: none;
     }
 }
 
@@ -365,10 +374,6 @@ i.fa-play {
     .player-image, .progress-wrap, #progress, .player-btn {
         width: 250px;
     }
-
-    .player-btn {
-    }
-
 
     .player-image {
         margin-top: -10px;

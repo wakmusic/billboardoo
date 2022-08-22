@@ -64,6 +64,7 @@ function ChartList(props) {
                         {update(i + 1, data[i])}
                         <span className="chart-title">{data[i].title}</span>
                         <span className="chart-artist">{data[i].artist}</span>
+                        <span className="chart-lyrics">{data[i].lyrics ? "가사" : null}</span>
                         <div className="right-align">
                             {props.type === "total" ?
                                 <div className="chart-last">{data[i].last === 0 ? "-" : data[i].last}위</div> : null}

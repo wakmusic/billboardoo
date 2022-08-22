@@ -262,7 +262,7 @@
 }
 
 @media (max-width: 1400px) {
-    .search-input {
+    .search-input, .fa-magnifying-glass {
         display: none;
     }
 }

@@ -20,11 +20,11 @@ function Player(props) {
 
             const lyrics = document.getElementsByClassName('lyrics');
             let found = false;
-            let currentSecs = parseInt(current.split(":")[0]) * 60 + parseInt(current.split(":")[1]);
+            let currentSecs = parseFloat(document.getElementById('current').innerText);
             const wrap = document.getElementById('lyrics-wrap');
 
             for (let i = 0; i < lyrics.length; i++) {
-                if (!found && parseInt(lyrics[i].id) - 1 <= currentSecs && parseInt(lyrics[i].ariaLabel) - 1 >= currentSecs) {
+                if (!found && parseInt(lyrics[i].id) - 0.7 <= currentSecs && parseInt(lyrics[i].ariaLabel) - 0.7 >= currentSecs) {
                     lyrics[i].className = "lyrics lyric-selected";
                     found = true;
                     if (id !== lyrics[i].id) {
@@ -194,7 +194,7 @@ function Player(props) {
             <div id="player-wrap">
                 <YouTubeVideo id={props.id}/>
             </div>
-
+            <span id="current" style={{display: 'none'}}/>
             <PlayerInfo id={props.id}/>
             <div className="progress-wrap">
                 <input type="range" id="progress" min="0" defaultValue="0" max="100" onChange={playBar}/>

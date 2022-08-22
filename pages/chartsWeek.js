@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import ChartList from "../components/chartList";
 
 
-class Charts extends React.Component {
+class ChartsWeek extends React.Component {
     render() {
         return (
             <div className="container">
@@ -14,7 +14,7 @@ class Charts extends React.Component {
                 <div className="fade-in-page">
                     <div className="news-header">
                         <h2>BILLBOARDOO CHART</h2>
-                        <h1>HOT 100</h1>
+                        <h1>WEEKLY 100</h1>
                     </div>
                     <hr className="chart-menu-line"/>
                     <div className="chart-menu">
@@ -26,9 +26,9 @@ class Charts extends React.Component {
                     </div>
                     <hr className="chart-menu-line"/>
                     <div className="graph-view">
-                        <Link to="/graphs" className="chart-menu-content">그래프로 보기</Link>
+                        <Link to="/graphs/weekly" className="chart-menu-content">그래프로 보기</Link>
                     </div>
-                    <ChartList type="total"/>
+                    <ChartList type="weekly"/>
                 </div>
                 <Footer/>
             </div>
@@ -36,4 +36,4 @@ class Charts extends React.Component {
     }
 }
 
-export default Charts;
+export default ChartsWeek;
