@@ -83,6 +83,36 @@ img {
 .right {
     float: right;
     margin-right: 40px;
+    margin-top: -1px;
+}
+
+.login-btn {
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.login-btn:hover {
+    color: #76badf;
+    transition: 0.4s;
+}
+
+.profile {
+    margin-right: 15px;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    margin-right: 10px;
+    vertical-align: -11px;
+}
+
+.display-name {
+    color: white;
 }
 
 .menu-item:hover {
