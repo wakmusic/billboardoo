@@ -45,6 +45,15 @@ function PlayList(props) {
                 </a>
             );
         }
+        songs.push(
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+            <a>
+                <div className="add-music">
+                    <div className="add-music-btn"><i className="fa-solid fa-plus"/></div>
+                    <span>노래 추가</span>
+                </div>
+            </a>
+        )
         return songs;
     }
 
